@@ -1,4 +1,4 @@
-## [Deployment Link](https://jobify-gold.vercel.app/landing)
+## [Deployment Link](https://jobify-nu-nine.vercel.app/landing)
 
 # Getting Started with Create React App
 
