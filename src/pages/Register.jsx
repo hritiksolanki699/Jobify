@@ -18,6 +18,10 @@ const Register = () => {
   const { user, isLoading, showAlert, displayAlert, setupUser } =
     useAppContext();
 
+    const toggleMember = () => {
+      setValues({ ...values, isMember: !values.isMember });
+    };
+
   const handleChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
@@ -46,17 +50,15 @@ const Register = () => {
     return values;
   };
 
+ 
+
   useEffect(() => {
     if (user) {
-      setInterval(() => {
+      setTimeout(() => {
         navigate("/");
       }, 3000);
     }
-  }, [navigate, user]);
-
-  const toggleMember = () => {
-    setValues({ ...values, isMember: !values.isMember });
-  };
+  }, [user, navigate]);
 
   return (
     <Wrapper className="full-page">
