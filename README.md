@@ -1,10 +1,9 @@
 ## [Deployment Link](https://jobify-nu-nine.vercel.app)
-
-# Getting Started with Create React App
+# Getting Started with Create React App  Component
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Available Scripts   
 
 In the project directory, you can run:
 

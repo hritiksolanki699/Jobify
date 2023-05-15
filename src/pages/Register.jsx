@@ -6,8 +6,8 @@ import { useNavigate } from "react-router-dom";
 
 const initialState = {
   name: "",
-  email: "",
-  password: "",
+  email: "test@gmail.com",
+  password: "123456",
   isMember: true,
 };
 
@@ -18,9 +18,9 @@ const Register = () => {
   const { user, isLoading, showAlert, displayAlert, setupUser } =
     useAppContext();
 
-    const toggleMember = () => {
-      setValues({ ...values, isMember: !values.isMember });
-    };
+  const toggleMember = () => {
+    setValues({ ...values, isMember: !values.isMember });
+  };
 
   const handleChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
@@ -49,8 +49,6 @@ const Register = () => {
     }
     return values;
   };
-
- 
 
   useEffect(() => {
     if (user) {
